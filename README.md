@@ -1,1 +1,1 @@
-Hello, this is just for my python learning. lol
+Hello, this is just for my python learning.
