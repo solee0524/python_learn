@@ -17,5 +17,4 @@ while running:
 else:
     print 'The loop is over.'
 
-print 'Done'
 
