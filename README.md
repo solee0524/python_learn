@@ -1,7 +1,7 @@
-#Hello, this is just for my python learning.
+##Hello, this is just for my python learning.
 
-##Week1
+###Week1
     Finish function study and basic flow control. Need more practice.
     comman modules: simplegui, math, random
 
-##Week2
+###Week2
