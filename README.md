@@ -1,3 +1,7 @@
-Hello, this is just for my python learning.
+#Hello, this is just for my python learning.
 
-via Ubuntu
+##Week1
+    Finish function study and basic flow control. Need more practice.
+
+##Week2
+
