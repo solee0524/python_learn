@@ -14,3 +14,5 @@
 #####Finish mini project: Rock-paper-scissors-lizard-Spock (rpsls_project.py)
 
 ###Week2
+
+#####Have research on Tkinter (GUI for Python)
