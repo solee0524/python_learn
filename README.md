@@ -16,4 +16,5 @@
 ###Week2
 
 #####Have research on Tkinter (GUI for Python)
-    learn button, lebel, window, menu
+    learn button, label, window, menu
+    learn scroll bar
