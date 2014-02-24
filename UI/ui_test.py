@@ -1,8 +1,6 @@
 #!/usr/bin/python
 
 import Tkinter
-
-import Tkinter
 import tkMessageBox
 
 top = Tkinter.Tk()
