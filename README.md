@@ -18,3 +18,4 @@
 #####Have research on Tkinter (GUI for Python)
     learn button, label, window, menu
     learn scroll bar
+    learn timer(with Canvas)
