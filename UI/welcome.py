@@ -1,6 +1,4 @@
 #!/usr/bin/python
-__author__ = 'oracle'
-
 
 #
 #    sg_welcome.py
