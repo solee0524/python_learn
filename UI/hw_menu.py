@@ -1,7 +1,6 @@
 #!/usr/bin/python
 __author__ = 'bo li'
 
-
 from Tkinter import *
 import tkMessageBox
 
@@ -25,6 +24,7 @@ class App:
 def hello():
     print('hello')
 
+
 def about():
     w = Label(win, text="I am developer. See my website: solee.me")
     w.pack(side=TOP)
@@ -37,7 +37,7 @@ app = App(win)
 
 menubar = Menu(win)
 
-filemenu = Menu(menubar, tearoff = 0)
+filemenu = Menu(menubar, tearoff=0)
 filemenu.add_command(label="Open", command=hello)
 filemenu.add_command(label="Save", command=hello)
 filemenu.add_separator()
@@ -48,12 +48,11 @@ editmenu = Menu(menubar, tearoff=0)
 editmenu.add_command(label="Cut", command=hello)
 editmenu.add_command(label="Copy", command=hello)
 editmenu.add_command(label="Paste", command=hello)
-menubar.add_cascade(label="Edit",menu=editmenu)
+menubar.add_cascade(label="Edit", menu=editmenu)
 
 helpmenu = Menu(menubar, tearoff=0)
 helpmenu.add_command(label="About", command=about)
 menubar.add_cascade(label="Help", menu=helpmenu)
-
 
 win.config(menu=menubar)
 win.mainloop()

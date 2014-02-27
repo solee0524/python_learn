@@ -16,15 +16,18 @@ input_text_box.grid(row=2, column=0)
 input_text_box.delete(0, END)
 input_text_box.insert(0, 'Input text here')
 
+
 def call_input():
     temp_str = input_text_box.get()
     if (temp_str != '') and temp_str is not None:
         print temp_str
 
+
 def call_input_enter(event):
     temp_str = input_text_box.get()
     if (temp_str != '') and temp_str is not None:
         print temp_str
+
 
 def set_focus_on_textbox(event):
     # print event.x, event.y

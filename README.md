@@ -19,3 +19,5 @@
     learn button, label, window, menu
     learn scroll bar
     learn timer(with Canvas)
+
+#####finish guess number mini-project

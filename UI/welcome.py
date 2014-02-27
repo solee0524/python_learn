@@ -16,15 +16,16 @@ Key things to learn: our first use of the Canvas widget, and note how awkward it
 
 # import simplegui
 
-from Tkinter import *   # works in V2.7.3 with change to Tkinter
+from Tkinter import *  # works in V2.7.3 with change to Tkinter
+
 root = Tk()
 
 root.title("Welcome")
 root.geometry("500x300")  # 500 x 300 pixel window with no offset
 
 helv30 = ('Helvetica', 30)  #  font for printing text to canvas.  Helvetica
-                            #   is supposedly a 'safe' font ... see the next
-                            #   few lines
+#   is supposedly a 'safe' font ... see the next
+#   few lines
 
 """
    'Tk 8.0 automatically maps Courier, Helvetica, and Times to their
@@ -40,7 +41,7 @@ message = "Welcome!"
 message2 = "Good Job!"
 
 frame1 = Frame(root)
-frame1.grid(row = 0, column = 0)
+frame1.grid(row=0, column=0)
 
 """
  OK, a new widget of type Canvas, named 'first_canvas' by me (usually you'll
@@ -50,14 +51,14 @@ frame1.grid(row = 0, column = 0)
    the window 'root'.  We can draw, display images and print on the Canvas.
 
 """
-first_canvas = Canvas(root,width=300, height=200, bg='black')
-first_canvas.grid(row = 0, column = 1)   # change to column = 0 and it will cover
-                                   #  frame1 and the buttons.
-                                   # change to row = 1, column = 0 and it is
-                                   #   placed under the buttons in the same col
-                                   #
-                                   #  put this in column 0 and frame1 in
-                                   #   column 1 and see what happens
+first_canvas = Canvas(root, width=300, height=200, bg='black')
+first_canvas.grid(row=0, column=1)  # change to column = 0 and it will cover
+#  frame1 and the buttons.
+# change to row = 1, column = 0 and it is
+#   placed under the buttons in the same col
+#
+#  put this in column 0 and frame1 in
+#   column 1 and see what happens
 
 
 # Handler for mouse click on a button
@@ -68,16 +69,17 @@ def click():
     this is how we hide or display the messages, by
     changing their states
     """
-    first_canvas.itemconfig(t_message, state = 'hidden')
-    t_message = first_canvas.create_text(150,100, text = message2, fill = 'blue', font = helv30 )
+    first_canvas.itemconfig(t_message, state='hidden')
+    t_message = first_canvas.create_text(150, 100, text=message2, fill='blue', font=helv30)
+
 
 #  I added this 2nd button so you could toggle the text
 #
 def reset():
     global t_message
     """ reverses the states and hence the display """
-    first_canvas.itemconfig(t_message, state = 'hidden')
-    t_message = first_canvas.create_text(150,100, text = message, fill = 'red', font = helv30)
+    first_canvas.itemconfig(t_message, state='hidden')
+    t_message = first_canvas.create_text(150, 100, text=message, fill='red', font=helv30)
 
 
 # Handler to draw on canvas
@@ -116,7 +118,7 @@ Only 14 options for this command instead of the usual 36 :)
   http://effbot.org/tkinterbook/canvas.htm#Tkinter.Canvas.create_text-method
 
 """
-t_message = first_canvas.create_text(150, 100, text = message, fill = 'red', font = helv30)
+t_message = first_canvas.create_text(150, 100, text=message, fill='red', font=helv30)
 
 #t_message = first_canvas.create_text(150,100, text = message, fill = 'red', \
 # font = helv30, activefill = "green", anchor = 'sw' )
@@ -126,11 +128,11 @@ t_message = first_canvas.create_text(150, 100, text = message, fill = 'red', fon
 #frame = simplegui.create_frame("Home", 300, 200)
 #frame.add_button("Click me", click)
 
-click_button = Button(frame1, text = "Click me", command = click, width=20)
-click_button.grid(row = 0, column = 0, padx = 15, pady = 2)
+click_button = Button(frame1, text="Click me", command=click, width=20)
+click_button.grid(row=0, column=0, padx=15, pady=2)
 
-reset_button = Button(frame1, text = "Reset Text", command = reset, width=20)
-reset_button.grid(row = 2, column = 0, padx = 15, pady = 2)
+reset_button = Button(frame1, text="Reset Text", command=reset, width=20)
+reset_button.grid(row=2, column=0, padx=15, pady=2)
 
 #frame.set_draw_handler(draw)
 
