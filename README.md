@@ -21,3 +21,9 @@
     learn timer(with Canvas)
 
 #####finish guess number mini-project
+
+###Week3
+    
+    import somes modules into python: flask, purl, requests, sh , etc.
+    
+	
