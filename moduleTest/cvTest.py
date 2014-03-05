@@ -34,15 +34,16 @@ i = 0
 # fourcc = cv2.VideoWriter_fourcc(*'XVID')
 # out = cv2.VideoWriter('output.mkv',fourcc, 20.0, (640,480))
 
-while(cap.isOpened()):
+
+while cap.isOpened():
     ret, frame = cap.read()
-    if ret==True:
+    if ret:
         # frame = cv2.flip(frame,0)
 
         # write the flipped frame
         # out.write(frame)
 
-        cv2.imshow('frame',frame)
+        cv2.imshow('frame', frame)
 
         k = cv2.waitKey(1)
 
@@ -50,13 +51,12 @@ while(cap.isOpened()):
             break
 
         if k == ord('c'):
-            cv2.imwrite('out_'+str(i)+'.jpg' ,frame)
+            cv2.imwrite('out_' + str(i) + '.jpg', frame)
             i += 1
-
     else:
         break
 
 # Release everything if job is finished
 cap.release()
-out.release()
+# out.release()
 cv2.destroyAllWindows()
