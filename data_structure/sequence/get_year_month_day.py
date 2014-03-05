@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 months = ['January',
-        'February',
+        'Febrary',
         'March',
         'April',
         'May',

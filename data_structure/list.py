@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
-shoplist = ['apple','banana','milk','shampoo','orange','comicbook']
+shoplist = ['apple', 'banana', 'milk', 'shampoo', 'orange', 'comicbook']
 
-print 'I have', len(shoplist),'items to buy'
+print 'I have', len(shoplist), 'items to buy'
 
 print 'These items are:'
 for item in shoplist:
-	print item,
+    print item,
 
 print '\nI also have to buy rice.'
 shoplist.append('rice')
@@ -21,3 +21,4 @@ olditem = shoplist[0]
 del shoplist[0]
 print 'I bought the', olditem
 print 'My shopping list is now', shoplist
+
