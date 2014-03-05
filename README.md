@@ -24,7 +24,7 @@
 
 ###Week3
     
-    import somes modules into python: flask, purl, requests, sh , etc.
+    import some modules into python: flask, purl, requests, sh , etc.
     learn import pygame, opencv on Mac （huge project）
-    
+    write simple_helloworld with pygame
 	
