@@ -16,7 +16,7 @@ class App:
         self.hi.pack(side=LEFT)
 
     def say_hi(self):
-        print "Hi, this is a class example."
+        print("Hi, this is a class example.")
         tkm = tkMessageBox
         tkm.showinfo("Say Hello", "Hi, this is a class example.")
 
