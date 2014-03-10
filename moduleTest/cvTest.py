@@ -34,6 +34,10 @@ i = 0
 # fourcc = cv2.VideoWriter_fourcc(*'XVID')
 # out = cv2.VideoWriter('output.mkv',fourcc, 20.0, (640,480))
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> FETCH_HEAD
 while cap.isOpened():
     ret, frame = cap.read()
     if ret:
@@ -52,7 +56,6 @@ while cap.isOpened():
         if k == ord('c'):
             cv2.imwrite('out_' + str(i) + '.jpg', frame)
             i += 1
-
     else:
         break
 
