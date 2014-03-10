@@ -1,5 +1,4 @@
 # Django settings for webTest project.
-
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 

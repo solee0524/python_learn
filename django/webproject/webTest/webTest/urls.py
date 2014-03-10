@@ -8,8 +8,8 @@ urlpatterns = patterns('',
                        # Examples:
                        # url(r'^$', 'webTest.views.home', name='home'),
                        # url(r'^webTest/', include('webTest.foo.urls')),
-                       url(r'^$', 'webTest.hello.index', name='hello'),
-                       url(r'^webTest/hello', 'webTest.hello.index', name='hello'),
+                       url(r'^$', 'views.helloTemp.index', name='helloTemp'),
+                       url(r'^hello/', 'webTest.hello.index', name='hello'),
 
                        # Uncomment the admin/doc line below to enable admin documentation:
                        # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
