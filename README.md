@@ -27,4 +27,21 @@
     import some modules into python: flask, purl, requests, sh , etc.
     learn import pygame, opencv on Mac （huge project）
     write simple_helloworld with pygame
+    
+###Week4
+
+    have general view on Django and Tornado.
+   
+#####use Django write a simple web application.
+        django-admin startproject <project_name>
+        cd <project_name>
+        python manage.py runserver
+        
+        configure urls.py to set url
+        
+    learn to use MySQLdb to connect mysql
+        
+    
+    
+    
 	
