@@ -12,13 +12,13 @@ def find_result(input_result):
     print line
 
 try:
-    conn = MySQLdb.connect(host='localhost', user='root', passwd='*****', port=3306, charset='utf8')
+    conn = MySQLdb.connect(host='localhost', user='root', passwd='******', port=3306, charset='utf8')
     #select database
     conn.select_db('sakila')
     cur = conn.cursor()
 
     count = cur.execute('select * from actor')
-    print 'Total %s records in actor table' % count
+    print 'Total %s records in actor table (%s)' % (count, count)
 
     #fetch one record from result set
     print 'fetch one record'
